@@ -98,13 +98,33 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0 20px 20px 0;
 }
+
+.right-content {
+    background: white;
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content li {
+    color: black;
+    background-color: #e5ffe5;
+    margin: 0 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
 
 #facts-right {
     width: 50%;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .menu {
         flex-direction: row;
         height: auto;
