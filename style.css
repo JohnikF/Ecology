@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+    --sidebar-width: 80px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +12,7 @@
 }
 
 main {
-    margin-left: 90px;
+    margin-left: calc(var(--sidebar-width) + 10px);
 }
 
 .bg {
@@ -38,7 +42,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 80px;
+    width: var(--sidebar-width);
     padding-top: 7px;
 }
 
@@ -119,9 +123,23 @@ a {
     font-weight: 900;
 }
 
-
 #facts-right {
     width: 50%;
+}
+
+#gallery {
+
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.gallery-title-pocket img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
 }
 
 @media (max-width: 768px) {
