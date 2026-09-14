@@ -134,12 +134,51 @@ a {
 .gallery-title {
     text-align: center;
     font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-title-pocket img {
     height: 30px;
     width: 30px;
     margin-left: 10px;
+}
+
+.gallery-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.gallery-item {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-item-text {
+    z-index: 10;
+    position: relative;
+    background-color: white;
+    opacity: 0.8;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
