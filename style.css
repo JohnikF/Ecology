@@ -131,7 +131,7 @@ a {
 
 }
 
-.gallery-title {
+.section-title {
     text-align: center;
     font-size: 18px;
     margin-bottom: 30px;
@@ -140,9 +140,10 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
-.gallery-title-pocket img {
+.section-title-pocket img {
     height: 30px;
     width: 30px;
     margin-left: 10px;
@@ -179,6 +180,35 @@ a {
     padding: 10px;
     border-radius: 50px;
     text-align: center;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-content-item {
+    width: 33%;
+    text-align: center;
+    padding: 150px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 5px black;
+}
+
+.ac-item1 {
+    background-image: url("images/internet.jpg");
+}
+
+.ac-item2 {
+    background-image: url("images/events.jpg");
+}
+
+.ac-item3 {
+    background-image: url("images/friends.jpg");
 }
 
 @media (max-width: 768px) {
